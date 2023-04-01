@@ -1,0 +1,13 @@
+numpy
+torch==1.7.1
+torchvision==0.8.2
+einops==0.3.2
+timm==0.4.12
+matplotlib==3.7.1
+tqdm
+yacs
+numba
+filterpy
+scikit-image
+opencv-python
+
