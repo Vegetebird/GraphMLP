@@ -78,6 +78,7 @@ def show3Dpose(vals, ax, fix_z):
         left_z = max(0.0, -RADIUS_Z+zroot)
         right_z = RADIUS_Z+zroot
         ax.set_zlim3d([left_z, right_z])
+        # ax.set_zlim3d([0, 1.5])
     else:
         ax.set_zlim3d([-RADIUS_Z+zroot, RADIUS_Z+zroot])
 
