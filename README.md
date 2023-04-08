@@ -95,7 +95,7 @@ Then, you need to put your in-the-wild videos in the './demo/video' directory.
 Run the command below:
 ```bash
 # Run the command below:
-python demo/vis.py --video sample_video.
+python demo/vis.py --video sample_video
 
 # Or run the command to fix axis z:
 python demo/vis.py --video sample_video.mp4 --fix_z
