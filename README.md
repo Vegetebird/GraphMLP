@@ -41,10 +41,10 @@ The pretrained model can be found in [here](https://drive.google.com/drive/folde
 To test on a 1-frame GraphMLP model:
 
 ```bash
-## Human3.6M
+# Human3.6M
 python main.py --test --previous_dir 'checkpoint/pretrained/1' --frames 1
 
-## MPI-INF-3DHP
+# MPI-INF-3DHP
 python main.py --test --previous_dir 'checkpoint/pretrained/1' --frames 1 --dataset '3dhp'
 ```
 
@@ -75,10 +75,10 @@ Here, we report the parameters, FLOPs, and MPJPE of GraphMLP with different inpu
 To train a 1-frame GraphMLP model on Human3.6M:
 
 ```bash
-## Train from scratch
+# Train from scratch
 python main.py --frames 1 --batch_size 256
 
-## After training for 20 epochs, add refine module
+# After training for 20 epochs, add refine module
 python main.py --frames 1 --batch_size 256 --refine --lr 1e-5 --previous_dir [your best model saved path]
 ```
 
