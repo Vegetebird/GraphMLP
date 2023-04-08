@@ -101,6 +101,15 @@ Sample demo output:
 
 <p align="center"><img src="figure/sample_video.gif" width="60%" alt="" /></p>
 
+Or run the command below:
+```bash
+python demo/vis.py --video sample_video.mp4 --fix_z
+```
+
+Sample demo output:
+
+<p align="center"><img src="figure/sample_video_fix_z.gif" width="60%" alt="" /></p>
+
 
 ## Citation
 

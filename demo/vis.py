@@ -77,8 +77,8 @@ def show3Dpose(vals, ax, fix_z):
     if fix_z:
         left_z = max(0.0, -RADIUS_Z+zroot)
         right_z = RADIUS_Z+zroot
-        ax.set_zlim3d([left_z, right_z])
-        # ax.set_zlim3d([0, 1.5])
+        # ax.set_zlim3d([left_z, right_z])
+        ax.set_zlim3d([0, 1.5])
     else:
         ax.set_zlim3d([-RADIUS_Z+zroot, RADIUS_Z+zroot])
 
@@ -144,7 +144,7 @@ def get_pose3D(video_path, output_dir, fix_z):
     args, _ = argparse.ArgumentParser().parse_known_args()
     args.layers, args.channel, args.d_hid, args.token_dim, args.frames = 3, 512, 1024, 256, 243
     args.pad = (args.frames - 1) // 2
-    args.previous_dir = 'checkpoint/pretrained/243'
+    args.previous_dir = 'checkpoint/pretrained/243_demo'
     args.n_joints, args.out_joints = 17, 17
 
     ## Reload 
@@ -268,7 +268,7 @@ def get_pose3D(video_path, output_dir, fix_z):
         edge = (image_2d.shape[1] - image_2d.shape[0]) // 2
         image_2d = image_2d[:, edge:image_2d.shape[1] - edge]
 
-        edge = 110
+        edge = 100 if fix_z else 110
         image_3d = image_3d[edge:image_3d.shape[0] - edge, edge:image_3d.shape[1] - edge]
 
         ## show
