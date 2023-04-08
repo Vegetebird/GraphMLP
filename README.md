@@ -97,7 +97,7 @@ Run the command below:
 # Run the command below:
 python demo/vis.py --video sample_video
 
-# Or run the command to fix axis z:
+# Or run the command with the fixed z-axis:
 python demo/vis.py --video sample_video.mp4 --fix_z
 ```
 
