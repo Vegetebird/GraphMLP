@@ -94,12 +94,19 @@ Then, you need to put your in-the-wild videos in the './demo/video' directory.
 
 Run the command below:
 ```bash
-python demo/vis.py --video sample_video.mp4
+# Run the command below:
+python demo/vis.py --video sample_video.
+
+# Or run the command to fix axis z:
+python demo/vis.py --video sample_video.mp4 --fix_z
 ```
 
 Sample demo output:
 
-<p align="center"><img src="figure/sample_video.gif" width="60%" alt="" /></p>
+| ![sample_video](figure/sample_video.gif)  | ![sample_video_fix_z](figure/sample_video_fix_z.gif) |
+| ------------- | ------------- |
+
+<!-- <p align="center"><img src="figure/sample_video.gif" width="60%" alt="" /></p>
 
 Or run the command below:
 ```bash
@@ -108,7 +115,7 @@ python demo/vis.py --video sample_video.mp4 --fix_z
 
 Sample demo output:
 
-<p align="center"><img src="figure/sample_video_fix_z.gif" width="60%" alt="" /></p>
+<p align="center"><img src="figure/sample_video_fix_z.gif" width="60%" alt="" /></p> -->
 
 
 ## Citation
