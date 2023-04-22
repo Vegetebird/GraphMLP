@@ -268,7 +268,7 @@ def get_pose3D(video_path, output_dir, fix_z):
         edge = (image_2d.shape[1] - image_2d.shape[0]) // 2
         image_2d = image_2d[:, edge:image_2d.shape[1] - edge]
 
-        edge = 100 if fix_z else 110
+        edge = 102 if fix_z else 110
         image_3d = image_3d[edge:image_3d.shape[0] - edge, edge:image_3d.shape[1] - edge]
 
         ## show
