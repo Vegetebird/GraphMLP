@@ -13,8 +13,9 @@ This is the official implementation of the approach described in the paper:
 
 ## Installation
 
-GraphMLP is tested on Ubuntu 18 with Pytorch 1.7 and Python 3.9. 
+GraphMLP is tested on Ubuntu 18 with Pytorch 1.7.1 and Python 3.9. 
 - Create a conda environment: ```conda create -n graphmlp python=3.9```
+- Install PyTorch 1.7.1 and Torchvision 0.8.2 following the [official instructions](https://pytorch.org/)
 - ```pip3 install -r requirements.txt```
   
 ## Dataset setup
