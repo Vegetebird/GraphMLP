@@ -7,7 +7,7 @@ This is the official implementation of the approach described in the paper:
 
 > [**GraphMLP: A Graph MLP-Like Architecture for 3D Human Pose Estimation**](https://arxiv.org/pdf/2206.06420),            
 > Wenhao Li, Hong Liu, Tianyu Guo, Hao Tang, and Runwei Ding,     
-> *arXiv, 2022*
+> *Pattern Recognition, 2024*
 
 <p align="center"><img src="figure/pipeline.png" width="80%" alt="" /></p>
 
@@ -39,7 +39,7 @@ The pretrained model can be found in [here](https://drive.google.com/drive/folde
 
 ## Test the model
 
-To test on a 1-frame GraphMLP model:
+To test a 1-frame GraphMLP model:
 
 ```bash
 # Human3.6M
@@ -49,12 +49,12 @@ python main.py --test --previous_dir 'checkpoint/pretrained/1' --frames 1
 python main.py --test --previous_dir 'checkpoint/pretrained/1' --frames 1 --dataset '3dhp'
 ```
 
-To test on a 1-frame GraphMLP model with refine module on Human3.6M:
+To test a 1-frame GraphMLP model with refine module on Human3.6M:
 ```bash
 python main.py --test --previous_dir 'checkpoint/pretrained/1/refine' --frames 1 --refine --refine_reload
 ```
 
-To test on a 243-frames GraphMLP model on Human3.6M:
+To test a 243-frames GraphMLP model on Human3.6M:
 
 ```bash
 python main.py --test --previous_dir 'checkpoint/pretrained/243' --frames 243
@@ -96,7 +96,7 @@ Then, you need to put your in-the-wild videos in the './demo/video' directory.
 Run the command below:
 ```bash
 # Run the command below:
-python demo/vis.py --video sample_video
+python demo/vis.py --video sample_video.mp4
 
 # Or run the command with the fixed z-axis:
 python demo/vis.py --video sample_video.mp4 --fix_z
@@ -123,11 +123,12 @@ Sample demo output:
 
 If you find our work useful in your research, please consider citing:
 
-    @article{li2022graphmlp,
-      title={GraphMLP: A Graph MLP-Like Architecture for 3D Human Pose Estimation},
-      author={Li, Wenhao and Liu, Hong and Guo, Tianyu and Tang, Hao and Ding, Runwei},
-      journal={arXiv preprint arXiv:2206.06420},
-      year={2022}
+    @article{li2024graphmlp,
+      title={GraphMLP: A graph MLP-like architecture for 3D human pose estimation},
+      author={Li, Wenhao and Liu, Mengyuan and Liu, Hong and Guo, Tianyu and Wang, Ti and Tang, Hao and Sebe, Nicu},
+      journal={Pattern Recognition},
+      pages={110925},
+      year={2024},
     }
 
 ## Acknowledgement
