@@ -7,7 +7,7 @@ This is the official implementation of the approach described in the paper:
 
 > [**GraphMLP: A Graph MLP-Like Architecture for 3D Human Pose Estimation**](https://arxiv.org/pdf/2206.06420),            
 > Wenhao Li, Mengyuan Liu, Hong Liu, Tianyu Guo, Ti Wang, Hao Tang, Nicu Sebe          
-> *Pattern Recognition, 2024*
+> *Pattern Recognition, 2025*
 
 <p align="center"><img src="figure/pipeline.png" width="80%" alt="" /></p>
 
@@ -123,12 +123,13 @@ Sample demo output:
 
 If you find our work useful in your research, please consider citing:
 
-    @article{li2024graphmlp,
-      title={GraphMLP: A graph MLP-like architecture for 3D human pose estimation},
+    @article{li2025graphmlp,
+      title={GraphMLP: A Graph MLP-like Architecture for 3D Human Pose Estimation},
       author={Li, Wenhao and Liu, Mengyuan and Liu, Hong and Guo, Tianyu and Wang, Ti and Tang, Hao and Sebe, Nicu},
       journal={Pattern Recognition},
+      volume={158},
       pages={110925},
-      year={2024},
+      year={2025},
     }
 
 ## Acknowledgement
